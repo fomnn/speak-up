@@ -29,3 +29,28 @@ export default createRouter({
         },
     ]
 })
+// export default createRouter({
+//     history: createWebHistory(),
+//     routes: [
+//         {
+//             path: '/',
+//             name: 'home-page',
+//             component: HomePage,
+//         },
+//         {
+//             path: '/konsultasi',
+//             name: 'konsultasi',
+//             component: Konsultasi,
+//         },
+//         {
+//             path: '/masuk',
+//             name: 'Masuk',
+//             component: Masuk,
+//         },
+//         {
+//             path: '/daftar',
+//             name: 'daftar',
+//             component: Daftar,
+//         },
+//     ]
+// })
