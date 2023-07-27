@@ -33,8 +33,8 @@
         <p class="text-lg mt-5 text-[#330656]" style="font-family: 'K2D';">Mentor yang berpengalaman dalam berbicara di
           depan umum, siap untuk mendengarkan, memberikan saran, dan mengevaluasi kemampuan kamu</p>
         <div class="flex items-center gap-10 mt-28">
-          <p class="bg-orange-400 w-fit text-white px-6 py-2 rounded-xl">Konsultasi Sekarang</p>
-          <img src="./../assets/img/Frame5fds.png" alt="">
+          <RouterLink to="#" class="bg-orange-400 transition-all hover:shadow-lg duration-200 ease-in w-fit text-white px-6 py-2 rounded-xl">Konsultasi Sekarang</RouterLink>
+          <button><img src="./../assets/img/Frame5fds.png" alt="" class="hover:shadow-lg rounded-xl transition-all duration-200 ease-in"></button>
         </div>
       </div>
       <div class="flex flex-col mx-28 mt-60 gap-10">
@@ -55,6 +55,7 @@
             dengan Mentor Kami</p>
           <p class="text-lg mt-5 text-[#330656]" style="font-family: 'K2D';">Mentor yang peduli dan berdedikasi untuk
             membantu anak Anda mencapai potensi terbaik mereka</p>
+            <!-- <RouterLink to="#" class="bg-orange-400 transition-all mt-10 hover:shadow-lg duration-200 ease-in w-fit text-white px-6 py-2 rounded-xl">Lihat Mentor</RouterLink> -->
           <button class="bg-orange-400 w-fit text-white px-6 py-2 rounded-xl mt-10">Lihat Mentor</button>
         </div>
       </div>

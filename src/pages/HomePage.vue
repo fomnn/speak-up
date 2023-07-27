@@ -36,8 +36,8 @@
         <p class="text-lg mt-5 text-[#330656]" style="font-family: 'K2D';">Siapa bilang belajar harus membosankan? Belajar
           berbicara di depan umum dapat menjadi petualangan yang menyenangkan</p>
         <div class="flex items-center gap-10 mt-28">
-          <p class="bg-orange-400 w-fit text-white px-6 py-2 rounded-xl">Daftar Sekarang</p>
-          <img src="./../assets/img/Frame5.png" alt="">
+          <RouterLink to="/daftar" class="bg-orange-400 transition-all hover:shadow-lg duration-200 ease-in w-fit text-white px-6 py-2 rounded-xl">Daftar Sekarang</RouterLink>
+          <button><img src="./../assets/img/Frame5.png" alt="" class="hover:shadow-lg rounded-xl transition-all duration-200 ease-in"></button>
         </div>
       </div>
       <div class="flex justify-end">
@@ -58,7 +58,7 @@
         </div>
         <div class="grid grid-cols-4 gap-6">
           <div v-for="index in 4"
-            class="border-[0.4em] rounded-xl border-[#330656] flex flex-col gap-2 items-center px-4 text-center py-6">
+            class="border-[0.4em] rounded-xl border-[#330656] hover:-translate-y-1 hover:shadow-xl duration-300 transition-all flex flex-col gap-2 items-center px-4 text-center py-6">
             <img src="./../assets/img/ph_video.png" alt="">
             <p style="font-family: 'Londrina Solid', cursive;" class="text-3xl text-orange-400">Materi Video</p>
             <p style="font-family: 'K2D';" class="text-md text-[#330656]">Membantu kamu dalam proses belajar berbicara di
