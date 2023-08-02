@@ -58,8 +58,9 @@
         </div>
         <div class="grid grid-cols-4 gap-6">
           <div v-for="index in 4"
-            class="border-[0.4em] rounded-xl border-[#330656] hover:-translate-y-1 hover:shadow-xl duration-300 transition-all flex flex-col gap-2 items-center px-4 text-center py-6">
-            <img src="./../assets/img/ph_video.png" alt="">
+            class="border-[0.4em] rounded-xl border-[#330656] hover:-translate-y-1 hover:shadow-xl duration-300 transition-all flex flex-col gap-2 items-center px-4 text-center pb-6">
+            <!-- <img src="./../assets/img/ph_video.png" alt=""> -->
+            <iframe src="https://drive.google.com/file/d/1ubcxRc4LXXV8PUMSiQcbdcwThW3AKfnp/preview" width="270" allow="autoplay" class="rounded-sm"></iframe>
             <p style="font-family: 'Londrina Solid', cursive;" class="text-3xl text-orange-400">Materi Video</p>
             <p style="font-family: 'K2D';" class="text-md text-[#330656]">Membantu kamu dalam proses belajar berbicara di
               depan umum dengan mudah dan seru</p>
@@ -70,10 +71,12 @@
         <p style="font-family: 'Londrina Solid', cursive;" class="text-5xl text-[#330656]">Play Game</p>
         <p style="font-family: 'K2D';">Coba mainkan permainan buah-buahan dibawah ini dan klik “Mulai Game”</p>
         <div class="bg-[#4B2D62] px-4 py-3 rounded-2xl flex flex-col gap-2 items-center">
-          <img src="./../assets/img/image4.png" alt="">
+          <img v-if="preview" src="./../assets/img/image4.png" alt="">
+          
+          <iframe v-else src="https://drive.google.com/file/d/1XmxhimHJjY7JHBEdf8VONfLlYfWDjjdo/preview?controls=0" width="747" height="379" allow="autoplay" allowfullscreen draggable="false"></iframe>
           <p class="bg-[#330656] rounded-xl px-6 py-8 text-white text-center w-full">Kelompokkan buah-buahan diatas sesuai
             dengan nama yang tersedia</p>
-          <button class="bg-orange-400 px-5 py-1.5 text-center w-fit rounded-xl text-white">Mulai game</button>
+          <button class="bg-orange-400 px-5 py-1.5 text-center w-fit rounded-xl text-white" @click="preview = false">Mulai game</button>
         </div>
       </div>
       <div class="flex px-28 gap-10 mt-28 pb-40">
@@ -90,8 +93,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 
+const preview = ref(true)
 
 </script>
   
